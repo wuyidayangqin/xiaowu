@@ -1,0 +1,7 @@
+<view wx:if="{{ list.length }}" class="swiper-container" style="{{ style }}">
+    <swiper class="{{round ? 'round' : ''}}">
+        <swiper-item wx:for="{{ list }}" wx:key="index">
+            <image mode="aspectFill" src="{{ list[index] }}"></image>
+        </swiper-item>
+    </swiper>
+</view>

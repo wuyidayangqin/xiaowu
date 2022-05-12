@@ -1,0 +1,141 @@
+.page {
+    background: linear-gradient(to bottom, #fbe7e6, #f8f8f8);
+    width: 100%;
+    height: 100vh;
+    /* 这样的好处就是修改border和padding数值盒子的大小不变。 */
+    box-sizing: border-box;
+    padding: 0 30rpx;
+    padding-top: 150rpx;
+    /* border:  1px solid red; */
+}
+
+.user-area {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+}
+
+.user-box .name {
+    font-size: 30rpx;
+    margin-left: 20rpx;
+    font-weight: bold;
+
+    /* border: 1px solid red; */
+}
+
+.login-btn {
+    width: 150rpx;
+    height: 62rpx;
+    border-radius: 10rpx;
+    background-color: #E60012;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25rpx;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26rpx;
+}
+
+.card {
+    width: 330rpx;
+    background-color: #fff;
+    border-radius: 15rpx;
+    box-sizing: border-box;
+    padding: 23rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta {
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.meta .count {
+    font-size: 24rpx;
+    font-weight: bold;
+}
+
+.meta .name {
+    font-size: 17rpx;
+    color: #777777;
+}
+
+.card-container .card .icon {
+    width: 72rpx;
+    height: 72rpx;
+}
+
+.list-items {
+    margin-bottom: 26rpx;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.list-items .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36rpx 30rpx;
+}
+
+.list-items .item .content {
+    display: flex;
+    align-items: center;
+}
+
+.list-items .item .content .icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 25rpx;
+}
+
+.label {
+    font-size: 26rpx;
+}
+
+.left-arrow {
+    font-size: 20rpx;
+    display: flex;
+}
+
+.bottom {
+    font-size: 20rpx;
+    display: flex;
+    text-align: center;
+    padding-top: 15rpx;
+    justify-content: center;
+}
+
+.bottom view {
+    /* border: 1px solid red; */
+    margin: 0 10rpx;
+}

@@ -1,0 +1,22 @@
+<scroll-view class="menu-list" scroll-y>
+    <view class="list">
+        <view wx:for="{{ goodlist }}" wx:key="index" class="section" data-index="{{ index }}">
+            <view class="section-header">
+                {{item.classify}}
+            </view>
+            <view class="section-list">
+                <view class="item" wx:for="{{gooditem }}" wx:key="index">
+                    <image src="../../assets/images/product-image.png"></image>
+                    <view class="info">
+                        <view class="name">{{ item.name }}</view>
+                        <view class="description">{{ item.description }}</view>
+                        <view class="price">￥{{ item.price }}</view>
+                    </view>
+                    <view class="add-icon">
+                        <image src="../../assets/icons/plus.svg"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

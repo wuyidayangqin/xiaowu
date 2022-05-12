@@ -1,0 +1,127 @@
+.page {
+    margin-top: 8%;
+}
+
+.header {
+    padding: 0 30rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 34rpx;
+}
+
+.header .back-icon {
+    width: 18rpx;
+    height: 32rpx;
+    margin-right: 30rpx;
+}
+
+.header .search-input {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f2;
+    width: 435rpx;
+    height: 64rpx;
+    border-radius: 10rpx;
+    padding: 0 18rpx;
+    box-sizing: border-box;
+}
+
+.header .search-icon {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 10rpx;
+}
+
+.header input {
+    font-size: 24rpx;
+    line-height: 24rpx;
+    height: 24rpx;
+    color: #777777;
+    flex-grow: 1;
+}
+
+.menu-info {
+    /* border: 1px solid red; */
+    padding: 0 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-info {
+    margin-top: 4rpx;
+}
+
+.store-name {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 400rpx;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32rpx;
+    font-weight: 500;
+    margin-bottom: 10rpx;
+}
+
+.store-info .store-name image {
+    margin-left: 8rpx;
+    width: 16rpx;
+    height: 28rpx;
+}
+
+.store-location {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    width: 22rpx;
+    height: 22rpx;
+    margin-right: 4rpx;
+}
+
+.distance-info {
+    color: #a6a6a6;
+    font-size: 22rpx;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.trade-type {
+    width: 102rpx;
+    height: 50rpx;
+    background-color: #E60012;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.foodsafe {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 700rpx;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 10rpx;
+    color: #a6a6a6;
+    font-size: 22rpx;
+    margin-left: 40rpx;
+}
+
+.foodsafe image {
+    margin-left: 8rpx;
+    width: 16rpx;
+    height: 28rpx;
+}
+
+.menu {
+    margin-top: 38rpx;
+    /* border: 1px solid red; */
+    padding-right: 32rpx;
+    display: grid;
+    grid-template-columns: 160rpx 1fr;
+    gap: 20rpx
+}

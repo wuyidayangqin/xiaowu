@@ -1,0 +1,41 @@
+<view class="page">
+
+    <swiper-com list="{{ swiperList }}" style="width: 100vw; height: 630rpx;" dots-style="left: 50rpx;bottom: 58rpx;" round />
+    <!-- 会员/积分区域 -->
+    <view class="member-area">
+        <view class="vip-box">
+            <image src="{{isLogin? userInfo.avatarUrl :'/assets/images/vip-pic.png'}}"></image>
+            <view class="meta">
+                <view class="title">{{ isLogin ? '微雪花会员' : '尊敬的用户'}}</view>
+                <progress wx:if="{{isLogin}}" percent="{{vipinfo2[0].percent}}" width="320rpx" stroke-width="5" active />
+                <view class="tips">{{ isLogin ? '再升1级可享【升级礼包】等6项权益' : '会员可享【闲时优惠】等多项权益' }}</view>
+            </view>
+        </view>
+
+        <view wx:if="{{ isLogin }}" class="coin-box">
+            <image mode="aspectFill" src="../../assets/images/coin.png"></image>
+            <view class="currency">{{vipinfo2[0].currency}}</view>
+        </view>
+
+        <view wx:if="{{!isLogin}}" class="login-btn" bindtap="gotoLogin">授权登录</view>
+    </view>
+
+    <!-- 点餐banner   -->
+    <view class="menu-banner">
+        <view class="location">
+            <image src="../../assets/images/current.png"></image>
+            <view class="name">{{ isLogin ? '蜜雪冰城 （华夏理工校内店)' : '附近暂无门店' }}</view>
+        </view>
+        <image class="menu-card" src="../../assets/images/menu-banner.jpg" bindtap="onMenuCardClick"></image>
+    </view>
+
+    <view class="banner-list">
+        <image class="banner" src="../../assets/images/banner-1.jpg" bindtap="onArticleClick">
+        </image>
+        <image class="banner" src="../../assets/images/banner-2.jpg">
+        </image>
+        <image class="banner" src="../../assets/images/banner-3.jpg">
+        </image>
+    </view>
+
+</view>

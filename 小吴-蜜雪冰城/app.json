@@ -1,0 +1,65 @@
+{
+    "pages": [
+        "pages/menu/menu",
+        "pages/login/login",
+        "pages/me/me",
+        "pages/index/index",
+        "pages/category/category",
+        "pages/shoppingcart/shoppingcart"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "蜜雪冰城",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "selectedColor": "#FFA500",
+        "backgroundColor": "#ccc",
+        "borderStyle": "white",
+        "color": "#666",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./assets/images/home.png",
+                "selectedIconPath": "./assets/images/home-selected.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "点餐",
+                "iconPath": "./assets/images/menu.png",
+                "selectedIconPath": "./assets/images/menu-selected.png"
+            },
+            {
+                "pagePath": "pages/shoppingcart/shoppingcart",
+                "text": "订单",
+                "iconPath": "./assets/images/order.png",
+                "selectedIconPath": "./assets/images/order-selected.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "./assets/images/me.png",
+                "selectedIconPath": "./assets/images/me-selected.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+
+    "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序定位"
+        }
+      },
+
+
+
+    "plugins": {
+        "chooseLocation": {
+          "version": "1.0.9",
+          "provider": "wx76a9a06e5b4e693e"
+        }
+      }
+}

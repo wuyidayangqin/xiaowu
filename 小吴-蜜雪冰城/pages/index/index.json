@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "swiper-com": "../../components/swiper-com/swiper"
+    },
+    "navigationStyle": "custom"
+}

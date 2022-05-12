@@ -1,0 +1,40 @@
+<view class="page">
+    <view class="header" style="{{ headerStyle }}">
+        <image class="back-icon" bindtap="switch" src="../../assets/icons/arrow-left.svg"></image>
+        <view class="search-input">
+            <image class="search-icon" src="../../assets/icons/search.svg"></image>
+            <input placeholder="请输入商品名" />
+        </view>
+    </view>
+
+    <view class="menu-info">
+        <view class="store-info">
+            <view class="store-name" bindtap="switchCurrentStore">
+                {{currentStore}}
+                <image src="../../assets/icons/arrow-right.svg"></image>
+            </view>
+            <view class="store-location">
+                <image class="location-icon" src="../../assets/icons/location.svg"></image>
+                <view class="distance-info">
+                    距离您 <view style="color: red; margin-left: 4rpx">{{distance}}km</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="trade-type">
+            自提
+        </view>
+    </view>
+    <view class="foodsafe">
+        查看食品安全信息
+        <image src="../../assets/icons/arrow-right.svg"></image>
+    </view>
+
+    <view class="menu">
+        <sidebar list="{{sidebarList}}"></sidebar>
+        <view>
+            <Swiper-com list="{{swiperimg}}"></Swiper-com>
+            <good-list gooditem="{{gooditem}}" goodlist="{{goodlist}}"></good-list>
+        </view>
+    </view>
+</view>

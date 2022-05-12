@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "sidebar":"../../components/sidebar/index",
+        "Swiper-com":"../../components/swiper-com/swiper",
+        "good-list":"../../components/good-list/good-list"
+    },
+    "navigationStyle": "custom"
+}

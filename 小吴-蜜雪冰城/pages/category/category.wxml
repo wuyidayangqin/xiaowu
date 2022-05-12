@@ -1,0 +1,119 @@
+<view class="page">
+    <view class="header">
+        <tabs tabs="{{ [{label:'附近门店'},{label:'常去门店'}] }}"></tabs>
+        <view class="search">
+            <image style="width: 40rpx; height: 40rpx;" src="../../assets/icons/search.svg"></image>
+            <input class="search-input" placeholder="搜索门店" type="text" bindtap="chooseLocation" />
+        </view>
+    </view>
+    <view>
+        <map class="store-map" name="" style="height: {{collapse? '0':'400rpx' }};" longitude="{{longitude}}" latitude="{{latitude}}" show-location show-compass>
+            <image class="current-icon" src="../../assets/images/current.png"></image>
+        </map>
+
+        <view class="collapse-area" bindtap="colsapse">
+            {{ collapse ? '展开地图' : '收起地图' }}
+            <image class="icon" src="{{'../../assets/icons/arrow-' + (collapse ? 'down' : 'up') + '.svg'}}"></image>
+        </view>
+    </view>
+
+    <scroll-view style="height: calc(100vh - {{ collapse ? 200 : 550}}rpx);" class="store-list" scroll-y>
+        <view class="store-box" wx:for="{{list}}" wx:key="index" bindtap="switch">
+            <view class="info-area">
+                <view class="name">{{item.name}}</view>
+                <view class="info">{{item.address}}</view>
+                <view class="info">{{item.time}}</view>
+                <view class="tag">{{item.open}}</view>
+            </view>
+
+            <view class="location-area">
+                <view class="distance">距离{{item.distance}}m</view>
+                <view class="action-area">
+                    <image class="location" src="../../assets/images/location.jpg"></image>
+                    <image class="phone" src="../../assets/images/phone.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <!-- <view class="store-box">
+            <view class="info-area">
+                <view class="name">蜜雪冰城(华夏校内店)</view>
+                <view class="info">武汉华夏理工学院</view>
+                <view class="info">营业时间：09:00-22:00</view>
+                <view class="tag">营业中</view>
+            </view>
+
+            <view class="location-area">
+                <view class="distance">距离479m</view>
+                <view class="action-area">
+                    <image class="location" src="../../assets/images/location.jpg"></image>
+                    <image class="phone" src="../../assets/images/phone.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <view class="store-box">
+            <view class="info-area">
+                <view class="name">蜜雪冰城(华夏校内店)</view>
+                <view class="info">武汉华夏理工学院</view>
+                <view class="info">营业时间：09:00-22:00</view>
+                <view class="tag">营业中</view>
+            </view>
+
+            <view class="location-area">
+                <view class="distance">距离479m</view>
+                <view class="action-area">
+                    <image class="location" src="../../assets/images/location.jpg"></image>
+                    <image class="phone" src="../../assets/images/phone.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <view class="store-box">
+            <view class="info-area">
+                <view class="name">蜜雪冰城(华夏校内店)</view>
+                <view class="info">武汉华夏理工学院</view>
+                <view class="info">营业时间：09:00-22:00</view>
+                <view class="tag">营业中</view>
+            </view>
+
+            <view class="location-area">
+                <view class="distance">距离479m</view>
+                <view class="action-area">
+                    <image class="location" src="../../assets/images/location.jpg"></image>
+                    <image class="phone" src="../../assets/images/phone.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <view class="store-box">
+            <view class="info-area">
+                <view class="name">蜜雪冰城(华夏校内店)</view>
+                <view class="info">武汉华夏理工学院</view>
+                <view class="info">营业时间：09:00-22:00</view>
+                <view class="tag">营业中</view>
+            </view>
+
+            <view class="location-area">
+                <view class="distance">距离479m</view>
+                <view class="action-area">
+                    <image class="location" src="../../assets/images/location.jpg"></image>
+                    <image class="phone" src="../../assets/images/phone.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <view class="store-box">
+            <view class="info-area">
+                <view class="name">蜜雪冰城(华夏校内店)</view>
+                <view class="info">武汉华夏理工学院</view>
+                <view class="info">营业时间：09:00-22:00</view>
+                <view class="tag">营业中</view>
+            </view>
+
+            <view class="location-area">
+                <view class="distance">距离479m</view>
+                <view class="action-area">
+                    <image class="location" src="../../assets/images/location.jpg"></image>
+                    <image class="phone" src="../../assets/images/phone.jpg"></image>
+                </view>
+            </view>
+        </view> -->
+
+    </scroll-view>
+</view>
